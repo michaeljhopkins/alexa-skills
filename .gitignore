@@ -1,0 +1,12 @@
+_ide_helper.php
+.env
+/vendor
+node_debug.log
+node_modules
+.idea
+._.*
+*.iml
+fetch-database.sh
+atlassian-ide-plugin.xml
+assets.sh
+.php_cs.cache
