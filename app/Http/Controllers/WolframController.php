@@ -17,6 +17,9 @@ class WolframController extends Controller
         foreach(\Alexa::session() as $key=>$val){
             \Log::info('key: '.$key.' | val: '.$val);
         }
+        foreach(\Input::all() as $key=>$val){
+            \Log::info('key: '.$key.' | val: '.$val);
+        }
     }
 
     public function endSession()

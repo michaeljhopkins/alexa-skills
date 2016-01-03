@@ -1,5 +1,7 @@
 <?php
 
+use Alexa\Device;
+
 return [
 
 	/*
@@ -51,7 +53,7 @@ return [
 	 | @see https://developer.amazon.com/public/solutions/devices/echo/alexa-app-kit/docs/developing-your-app-with-the-alexa-appkit
 	 |
 	 */
-	'timestampTolerance' => env('ALEXA_TIMESTAMP_TOLERANCE', 150),
+	'timestampTolerance' => env('ALEXA_TIMESTAMP_TOLERANCE', 0),
 
 	/*
 	|--------------------------------------------------------------------------
@@ -158,7 +160,7 @@ return [
 		|	Intent to a specified Intent/route?
 		|
 		*/
-		'enable' => env('ALEXA_PROMPT_ENABLE', true),
+		'enable' => env('ALEXA_PROMPT_ENABLE', false),
 
 		/*
 		|--------------------------------------------------------------------------
@@ -201,7 +203,7 @@ return [
 		| as long as it implements the AmazonEchoDevice contract.
 		|
 		*/
-		'model' => env('ALEXA_ELOQUENT_DEVICE_MODEL', 'Alexa\Device'),
+		'model' => env('ALEXA_ELOQUENT_DEVICE_MODEL', Device::class),
 
 		/*
 		|--------------------------------------------------------------------------
