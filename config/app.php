@@ -152,7 +152,7 @@ return [
          * Package Service Providers...
          */
         #ConnorVG\WolframAlpha\WolframAlphaServiceProvider::class,
-        #Develpr\AlexaApp\Provider\LaravelServiceProvider::class,
+        Develpr\AlexaApp\Provider\LaravelServiceProvider::class,
         Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
 
 
