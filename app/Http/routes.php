@@ -15,5 +15,5 @@
 #AlexaRoute::sessionEnded('/test', 'WolframController@endSession');
 #AlexaRoute::intent('/test', 'WhatIs', 'WolframController@intent');
 
-
+Route::get('test','WolframController@intent');
 Route::post('test','WolframController@intent');
