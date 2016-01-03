@@ -216,8 +216,8 @@ return [
          * Package Facades...
          */
 
-        #'AlexaRoute' => Develpr\AlexaApp\Facades\AlexaRouter::class,
-        #'Alexa' => Develpr\AlexaApp\Facades\Alexa::class,
+        'AlexaRoute' => Develpr\AlexaApp\Facades\AlexaRouter::class,
+        'Alexa' => Develpr\AlexaApp\Facades\Alexa::class,
         'WolframAlpha' => ConnorVG\WolframAlpha\WolframAlphaFacade::class,
         'WA' => ConnorVG\WolframAlpha\WolframAlphaFacade::class,
 
