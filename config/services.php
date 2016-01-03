@@ -35,4 +35,8 @@ return [
         'secret' => env('STRIPE_SECRET'),
     ],
 
+    'wolfram' => [
+        'key' => env('WOLFRAM_KEY')
+    ]
+
 ];

@@ -149,12 +149,22 @@ return [
         Illuminate\View\ViewServiceProvider::class,
 
         /*
+         * Package Service Providers...
+         */
+        #ConnorVG\WolframAlpha\WolframAlphaServiceProvider::class,
+        Develpr\AlexaApp\Provider\LaravelServiceProvider::class,
+        Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
+
+
+
+        /*
          * Application Service Providers...
          */
         Alexa\Providers\AppServiceProvider::class,
         Alexa\Providers\AuthServiceProvider::class,
         Alexa\Providers\EventServiceProvider::class,
         Alexa\Providers\RouteServiceProvider::class,
+        Alexa\Providers\WolframAlphaServiceProvider::class,
 
     ],
 
@@ -201,6 +211,16 @@ return [
         'URL'       => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View'      => Illuminate\Support\Facades\View::class,
+
+        /*
+         * Package Facades...
+         */
+
+        #'AlexaRoute' => Develpr\AlexaApp\Facades\AlexaRouter::class,
+        #'Alexa' => Develpr\AlexaApp\Facades\Alexa::class,
+        'WolframAlpha' => ConnorVG\WolframAlpha\WolframAlphaFacade::class,
+        'WA' => ConnorVG\WolframAlpha\WolframAlphaFacade::class,
+
 
     ],
 
